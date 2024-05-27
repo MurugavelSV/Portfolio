@@ -1,0 +1,479 @@
+body{
+	margin: 0px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(even){
+	background-color: rgb(200 200 200 / 30%);
+}
+
+/* Header section */
+
+#header-body{
+	height: 65vh;
+	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity: 0.8;
+	margin: 0px;
+}
+
+#header-body h2{
+	letter-spacing: 0.4rem;
+	color: white;
+	font-weight: bold;
+	font-size: 3.3rem;
+	margin-top: 3em;
+	margin-bottom: 0%;
+	text-align: center;
+	font-family: serif;
+}
+
+
+/* nav section */
+
+.nav-ul{
+	padding-left: 0px;
+	list-style: none;
+	margin: 0px;
+}
+
+.dropdown-container{
+	position: relative;
+	margin-left: 85%;
+/*	height: 30vh;*/
+}
+
+#dropdownimg-container{
+	text-align: right;
+	padding: 15%;
+	font-size: 3em;
+	color: white;
+	display: none;
+}
+
+.dropdown-content{
+	padding: 10px;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+    display: none;
+}
+
+.dropdown-container:hover .dropdown-content{
+	display: block;
+	position: absolute;
+	top: 77%;
+	right: 7%;
+
+}
+
+.dropdown-content ul li {
+    margin: 0.5rem;
+}
+
+/* Horizontal list */
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 2rem 0.5rem;
+	margin-bottom: 0rem;
+}
+
+.nav-ul li a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+}
+
+.nav-ul li a:hover{
+	border-bottom: 1px solid white;
+	color: lightgrey;
+	transition: color 0.5s, border-bottom 4s;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/* Social-links */
+
+.social-links{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.social-links li{
+	margin-top: 0rem;
+}
+
+.social-links li a i{
+	color: white;
+	width: 1.2vw;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.social-links li a i:hover{
+	box-shadow: 0px 0px 9px 4px rgba(230,196,196,0.3);
+}
+
+/* Profile image */
+
+#profile-img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 3px solid white;
+	box-shadow: 1.5px 2px 9px 4px lightgrey;
+}
+
+#profile-img{
+	height: 13rem;
+	width: 13rem;
+/* 	margin: auto; */
+	margin-top: -14vh;
+	z-index: 1;
+/*	position: relative;*/
+}
+
+/* About section */
+
+#about p{
+	line-height: 1.5;
+	word-spacing: 0.25rem;
+	font-size: 1.2rem;
+	color: darkslategrey;
+	margin: 5vh 17vw;
+	font-family: sans-serif;
+}
+
+.imp-txt{
+	color: blue;
+	font-weight: bold;
+}
+
+/* Skills Section */
+
+.section-headings{
+	color: blue;
+	font-weight: lighter;
+	font-family: sans-serif;
+	font-size: 2rem;
+	letter-spacing: 5px;
+	margin-top: 4rem;
+	padding: 7px;
+	margin-bottom: 75px;
+}
+
+.section-headings span{
+	margin-right: 0.5rem;
+}
+
+.skills-display{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 70%;
+}
+
+.skills-progress{
+	background-color: lightgrey;
+	border-radius: 20px;
+	width: 10em;
+	height: 2em;
+	border: 1px solid #b6b6b6;
+	margin-left: 2.9rem;
+	margin-bottom: 4rem;
+}
+
+.fiftypercent{
+	width: 50%;
+}
+
+.ninetypercent{
+	width: 80%;
+}
+
+.skills-progress > div{
+	border-radius: 20px 0px 0px 20px;
+	height: 100%;
+/*	padding: 5px;*/
+	box-shadow: 4px 0px 4px 0px #9c9898;
+}
+
+.skill-name{
+	padding-top: 0.4rem;
+}
+
+.skill-name span{
+	color: white;
+	font-size: 1.1rem;
+	margin-left: 0.5rem;
+}
+
+/* Background-colors for each skill */
+
+.fill-blue{
+	background-color: #222286;
+}
+
+.fill-orange{
+	background-color: #d5411a;
+}
+
+.fill-lightgreen{
+	background-color: #215638ed;
+}
+
+.fill-violet{
+	background-color: #724672;
+}
+
+/* Portfolio section */
+
+.portfolio-display{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.portfolio-display > a{
+	text-decoration: none;
+	color: white;
+	height: auto;
+	width: auto;
+	margin-bottom: 4rem;
+}
+
+.type1{
+	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png");
+	background-size: cover;
+}
+
+.type2{
+	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png");
+	background-size: cover;
+}
+
+.portfolio-container{
+	height: 32vh;
+	width: 40vh;
+}
+
+.portfolio-container > span{
+	font-family: sans-serif;
+	text-align: center;
+	display: inline-block;
+	padding: 1.1em 1em 3.7em 1em;
+	font-size: 2rem;
+	opacity: 0;
+}
+
+.portfolio-container > span:hover{
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
+.portfolio-container:hover{
+	background-color: rgba(208,208,208,0.7);
+	box-shadow: 0px 0px 17px -2px cyan;
+}
+
+/* Work-Experience section */
+
+.work-timeline,.study-timeline{
+    position: relative;
+    width: 70%;
+    margin: 2em;
+}
+
+.timeline{
+    position: relative;
+    left: 5%;
+    width: 40%;
+    min-height: 170px;
+    color: darkslategrey;
+}
+
+.timeline:nth-child(even){
+    left: 56%;
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    top: 36%;
+    right: -14%;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background-color: gray;
+    z-index: 1;
+}
+
+.timeline:nth-child(even)::after{
+    content: '';
+    left: -15.9%;
+}
+
+.timeline-divider{
+    position: absolute;
+    width: 0%;
+    height: 74%;
+    border: 2px dashed #0096fa6b;
+    left: 50%;
+    top: 10.5%;
+    color: darkblue;
+}
+
+.timeline-traveller{
+    margin-top: -1.1em;
+    margin-left: -0.1em;
+    font-size: 2em;
+    position: sticky;
+    top: 20%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.study-info,.experience-info{
+    position: relative;
+    text-align: right;
+}
+
+.company-logo{
+    position: absolute;
+    top: 0%;
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png");
+    background-size: cover;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* Text rules in Work and Education section */
+
+.position,.degree{
+    color: blue;
+    margin-bottom: -0.5em;
+}
+
+.company-name,.institute-name{
+    color: orange;
+    margin-bottom: -0.5em;
+}
+
+/* Education Section */
+
+.institute-logo{
+    position: absolute;
+    top: 0%;
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png");
+    background-size: cover;
+    width: 3em;
+    height: 2em;
+}
+
+/* Contatct Section */
+
+#contact{
+    background: linear-gradient(57deg, rgb(40, 87, 164) 0%, rgb(64, 48, 102) 74%);
+}
+
+#contact *{
+    color: white;
+}
+
+.contact-container > div{
+    width: 40%;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 37px;
+}
+
+form > *{
+    width: 100%;
+    align-self: center;
+    background: transparent;
+    border-style: none;
+    border-bottom: solid 2px white;
+    margin-bottom: 2em;
+}
+
+.submit-container{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+#submit-button{
+    background: transparent; 
+    border: 2px solid white;
+    text-transform: uppercase;
+    padding: 8px;
+    transition: all 0s;
+}
+
+#submit-button:hover{
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+#submit-button:active{
+	font-weight: normal;
+	font-size: 0.8em;
+}
+
+input,textarea:focus{
+    outline: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px){
+	.contact-container > div{
+		width: 75%;
+		margin-left: 12%;
+	}
+    
+    .timeline-divider{
+        left: 0%;
+    }
+    
+    .timeline{
+        width: 90% !important;
+        left: 10% !important;
+    }
+    
+    .timeline::after{
+        left: -11.8% !important;
+    }
+}
+
+@media screen and (max-width: 570px){
+	html{
+		font-size: 14px;
+	}
+
+	#header-body h2{
+		margin-top: 3.5em;
+		overflow-wrap: break-word;
+	}
+
+	#main-nav{
+		display: none;
+	}
+
+	#dropdownimg-container{
+		display: block;
+	}
+}
+
+
+
